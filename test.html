@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>PyScript Hello World</title>
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  </head>
+  <body>
+    <py-env>
+- ./myapp8763/dist/myapp8763-0.0.1-py3-none-any.whl
+    </py-env>
+
+    <py-script>
+        import myapp8763.funcs
+        myapp8763.funcs.main()
+    </py-script>
+  </body>
+</html>
