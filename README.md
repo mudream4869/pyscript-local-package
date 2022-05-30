@@ -13,7 +13,7 @@ This repository is an example for pyscript to:
 * Package files: a folder of python package and a setup.py for building wheel
 
 ```
-myapp8763
+repo
 ├── myapp8763
 │   ├── __init__.py
 │   └── funcs.py
@@ -24,7 +24,7 @@ myapp8763
 
 ```html
 <py-env>
-- ./myapp8763/dist/myapp8763-0.0.1-py3-none-any.whl
+- ./dist/myapp8763-0.0.1-py3-none-any.whl
 </py-env>
 ```
 
@@ -33,8 +33,6 @@ myapp8763
 ```bash
 git clone https://github.com/mudream4869/pyscript-local-package.git
 cd pyscript-local-package
-cd myapp8763
 python3 setup.py build bdist_wheel # generate wheel in dist folder
-cd ..
 python3 -m http.server # or other webserver command
 ```
