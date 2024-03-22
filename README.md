@@ -20,12 +20,21 @@ repo
 └── setup.py
 ```
 
+* pyscript.json:
+
+```json
+{
+    "packages": ["./dist/myapp8763-0.0.1-py3-none-any.whl"]
+}
+```
+
 * index.html:
 
 ```html
-<py-env>
-- ./dist/myapp8763-0.0.1-py3-none-any.whl
-</py-env>
+<script type="py" config="./pyscript.json" terminal>
+  import myapp8763.funcs
+  myapp8763.funcs.main()
+</script>
 ```
 
 ## Clone and Run
