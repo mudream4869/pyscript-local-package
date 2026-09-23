@@ -10,14 +10,14 @@ This repository is an example for pyscript to:
 
 ## Files
 
-* Package files: a folder of python package and a setup.py for building wheel
+* Package files: a folder of python package and a pyproject.toml for building wheel
 
 ```
 repo
 ├── myapp8763
 │   ├── __init__.py
 │   └── funcs.py
-└── setup.py
+└── pyproject.toml
 ```
 
 * pyscript.json:
@@ -42,6 +42,7 @@ repo
 ```bash
 git clone https://github.com/mudream4869/pyscript-local-package.git
 cd pyscript-local-package
-python3 setup.py build bdist_wheel # generate wheel in dist folder
+pip install build
+python3 -m build --wheel # generate wheel in dist folder
 python3 -m http.server # or other webserver command
 ```
