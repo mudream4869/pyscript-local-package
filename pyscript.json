@@ -1,3 +1,6 @@
 {
-    "packages": ["./dist/myapp8763-0.0.1-py3-none-any.whl"]
+    "files": {
+        "./myapp8763/__init__.py": "./myapp8763/",
+        "./myapp8763/funcs.py": "./myapp8763/"
+    }
 }
