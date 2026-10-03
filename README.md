@@ -71,3 +71,8 @@ python3 -m http.server # or other webserver command
 ```
 
 Open `http://localhost:8000/` (files) or `http://localhost:8000/wheel.html` (wheel).
+
+## Deploy to GitHub Pages
+
+Keep the empty `.nojekyll` file at the repo root.
+Without it, Jekyll skips files starting with `_`, so `__init__.py` returns 404.
